@@ -220,7 +220,7 @@ nav ul li {
 }
 
 .equipe {
-  padding: 35px;
+  padding: 30px 15px;
   backdrop-filter: blur(5px);
   background-color: rgba(204, 204, 204, 0.6);
   border-radius: 8px;
@@ -231,13 +231,17 @@ nav ul li {
   justify-content: center;
 }
 
+.equipe h1 {
+  font-size: 1.5rem;
+}
+
 .equipe p {
   padding: 20px 0px;
   text-align: center;
 }
 
 .equipe:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   background-color: rgba(204, 204, 204, 1);
 }
 
