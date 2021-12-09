@@ -1,0 +1,45 @@
+header {
+  background-image: url('../img/Sabonetes/IMAGEM_SABONETE_CHOCOLATE.jpeg') !important;
+  background-position: 50% 65% !important;
+}
+
+.container-img img {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: .5s ease;
+}
+
+.container-img img:hover {
+  transform: scale(1.05);
+}
+
+.descricao_produto {
+  padding: 150px 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.descricao {
+  width: 800px;
+}
+
+.btn {
+  border: none;
+  padding: 10px 25px !important;
+}
+
+.btn a {
+  color: #fff;
+}
+
+@media(max-width: 1100px){
+  .descricao_produto{
+    flex-wrap: wrap-reverse; /*Inverte a ordem que é 'quebrado' o container*/
+  }
+}
