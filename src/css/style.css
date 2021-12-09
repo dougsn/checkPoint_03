@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wpp img {
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  transition: 0.5s ease;
+}
+
+.wpp img:hover {
+  transform: translateY(-5px);
+}
+
+li a {
+  text-decoration: none;
+  color: #89ccee;
+  transition: 0.5s ease;
+  font-weight: 600;
+}
+
+li a:hover {
+  color: #01aaff;
+}
+
+header {
+  height: 100vh;
+  background-image: url('../img/Sabonetes/IMAGEM_FUBÁ_E_MEL.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+nav {
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 50px;
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.055);
+  height: 70px;
+  background: #fefefe;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-bottom: 0px;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+.home {
+  z-index: 2;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  justify-content: center;
+}
+
+.home h1 {
+  color: #2f86a6;
+  font-size: 50px;
+  font-weight: 800;
+}
+.home p {
+  font-size: 30px;
+  margin-top: 30px;
+  color: #056f95;
+}
+
+.home button {
+  border: none;
+  padding: 12px;
+  border-radius: 7px;
+  background-color: #2f86a6;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.home button:hover {
+  transform: scale(1.05);
+}
+
+.home button a {
+  color: #fff;
+}
+
+/*Inicio dos Produtos*/
+
+.produtos {
+  display: flex;
+  gap: 60px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  margin: auto;
+}
+
+.title-section {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+.sub-title {
+  text-align: center;
+  margin-bottom: 100px;
+  font-weight: 400;
+}
+
+/* .produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+} */
+
+.btn {
+  background-color: #01aaff;
+  padding: 5px;
+  border-radius: 7px;
+  margin: 20px 0px;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+  transition: 0.5s ease;
+}
+
+.btn span {
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+
+.title-produto {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.description-produto {
+  margin: 5px 0;
+}
+
+.caixa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+.caixa:hover img {
+  transform: scale(1.02);
+}
+
+.caixa p {
+  text-align: center;
+  width: 80%;
+}
+
+.caixa img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+
+/*Equipe*/
+
+.contato-equipe {
+  position: relative;
+  height: 700px;
+  background-image: url('/src/img/Sabonetes/IMAGEM_SABONETE_OLIVA.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.equipe {
+  padding: 35px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(204, 204, 204, 0.6);
+  border-radius: 8px;
+  transition: 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.equipe p {
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.equipe:hover {
+  transform: scale(1.05);
+  background-color: rgba(204, 204, 204, 1);
+}
+
+.equipe .links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.container-equipe {
+  display: flex;
+  gap: 30px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.equipe .links img {
+  width: 25px;
+  transition: 0.5s ease;
+}
+
+.equipe .links img:hover {
+  transform: scale(1.15);
+}
+
+.final {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #eee;
+}
+
+.final p {
+  margin-bottom: 0rem;
+}
+
+@media (max-width: 850px) {
+  .contato-equipe {
+    height: 1000px;
+  }
+  .equipe {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 764px) {
+  .conteiner-produtos {
+    width: 350px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .caixa p {
+    width: 100%;
+  }
+}
