@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+.navbar-responsivo{
+  display: none;
+}
+
 .wpp img {
   z-index: 2;
   width: 50px;
@@ -383,10 +387,38 @@ border-radius: 12px;
 }
 
 @media (max-width: 764px) {
+
+
+
+  .navbar-responsivo{
+    display: flex;
+    align-content: center;
+  }
+
+  .navbar>.container-fluid{
+    padding: 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .conteiner-produtos {
     width: 350px;
   }
+
+
+  .offcanvas-body {
+    display: flex;
+    align-items: center;
 }
+
+.offcanvas-body ul {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+}
+} 
 
 @media (max-width: 1400px) {
   .caixa p {
