@@ -378,12 +378,12 @@ border-radius: 12px;
 /*Responsividade*/
 
 @media (max-width: 850px) {
-  .contato-equipe {
-    height: 1000px;
-  }
-  .equipe {
-    padding: 20px;
-  }
+.contato-equipe {
+  height: 1000px;
+}
+.equipe {
+  padding: 20px;
+}
 }
 
 @media (max-width: 764px) {
@@ -406,18 +406,43 @@ border-radius: 12px;
     width: 350px;
   }
 
+  .offcanvas-header{
+    justify-content: flex-end;
+  }
 
   .offcanvas-body {
     display: flex;
     align-items: center;
-}
+  }
 
-.offcanvas-body ul {
+  .offcanvas-body ul {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 70px;
     align-items: center;
+  }
+  .offcanvas-end {
+    border-radius: 15px;
+    top: 20%;
+    display: flex;
+    right: 20%;
+    left: 20%;
+    bottom: 20%;
+    height: auto;
+    width: auto;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow:none !important;
 }
+
+
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
+
+
+
 } 
 
 @media (max-width: 1400px) {
