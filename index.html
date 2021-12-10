@@ -52,7 +52,80 @@
           <li><a href="#">Home</a></li>
           <li><a href="#produtos">Produtos</a></li>
           <li><a href="#contato">Contato</a></li>
-          <li><a href="#xx">Login</a></li>
+          <li>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Login
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="formulario">
+                      <form>
+                        <div>
+                          <img
+                            class="logo"
+                            src="./src/img/Sabonetes/Logo_Oficial.png"
+                            alt=""
+                          />
+                        </div>
+
+                        <div>
+                          <label for="mail">Email:</label>
+                          <input
+                            type="email"
+                            name="mail"
+                            id="mail"
+                            placeholder="Digite seu email"
+                          />
+                        </div>
+
+                        <div>
+                          <label for="senha">Senha:</label>
+                          <input
+                            type="password"
+                            name="senha"
+                            id="senha"
+                            placeholder="Digite sua senha"
+                          />
+                        </div>
+                        <div class="entrar">
+                          <button
+                            type="button"
+                            class="btn btn-primary btn-confirm"
+                          >
+                            Entrar
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
         </ul>
       </nav>
       <div class="home">
@@ -72,7 +145,9 @@
                 src="../src/img/Sabonetes/IMAGEM_ARGILA_AMARELA_E_BRANCA.jpeg"
                 alt=""
               />
-              <h1 class="title-produto">Sabonete<br />Argila Amarela & Branca</h1>
+              <h1 class="title-produto">
+                Sabonete<br />Argila Amarela & Branca
+              </h1>
               <p class="description-produto">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
                 consequatur.
@@ -126,7 +201,10 @@
                 src="../src/img/Sabonetes/IMAGEM_AVEIA_LAMINADA.jpeg"
                 alt=""
               />
-              <h1 class="title-produto">Sabonete<br /> Argila Aveia Laminada</h1>
+              <h1 class="title-produto">
+                Sabonete<br />
+                Argila Aveia Laminada
+              </h1>
               <p class="description-produto">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
                 consequatur.
@@ -156,10 +234,7 @@
               >
             </div>
             <div class="col-xs-6 col-md-6 col-lg-4 caixa">
-              <img
-                src="/src/img/Sabonetes/IMAGEM_SABONETE_OLIVA.jpeg"
-                alt=""
-              />
+              <img src="/src/img/Sabonetes/IMAGEM_SABONETE_OLIVA.jpeg" alt="" />
               <h1 class="title-produto">Sabonete <br />Argila & Oliva</h1>
               <p class="description-produto">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
@@ -244,6 +319,7 @@
         <p>&copy; Checkpoint 3 - Desenvolvido em 2021</p>
       </section>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

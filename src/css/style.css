@@ -49,10 +49,6 @@ header {
   background-attachment: fixed;
 }
 
-.img-header {
-  width: 40px;
-}
-
 nav {
   z-index: 3;
   position: fixed;
@@ -73,10 +69,15 @@ nav ul {
   flex-direction: row;
   list-style: none;
   margin-bottom: 0px;
+  align-items: center;
 }
 
 nav ul li {
   margin-left: 20px;
+}
+
+.modal-backdrop {
+  position: inherit;
 }
 
 .home {
@@ -153,15 +154,18 @@ nav ul li {
 
 .btn {
   background-color: #01aaff;
-  padding: 5px;
+  padding: 5px 15px;
   border-radius: 7px;
   margin: 20px 0px;
   transition: 0.5s ease;
+  border: none;
 }
 
 .btn:hover {
-  transform: scale(1.08);
+  transform: scale(1.05);
   transition: 0.5s ease;
+  background-color: #01aaff;
+  border: none;
 }
 
 .btn span {
@@ -278,6 +282,58 @@ nav ul li {
 .final p {
   margin-bottom: 0rem;
 }
+
+/*Formulário de Login*/
+
+.btn-primary:focus {
+  color: #fff;
+  background-color: #01aaff !important;
+  border-color: #01aaff !important;
+  box-shadow: none;
+}
+.modal-header {
+  border-bottom: none;
+}
+
+.img-header {
+  width: 40px;
+}
+
+.modal {
+  padding-top: 200px !important;
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.logo {
+  width: 100px;
+}
+
+.formulario {
+  text-align: center;
+}
+form {
+  color: rgb(24, 23, 23);
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  border-radius: 7px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.entrar {
+  text-align: center;
+  /* height: 50px; */
+}
+
+.btn-confirm {
+  width: 255px;
+  background-color: #33bb69;
+}
+
+/*Responsividade*/
 
 @media (max-width: 850px) {
   .contato-equipe {
