@@ -214,7 +214,7 @@ nav ul li {
 .contato-equipe {
   position: relative;
   height: 700px;
-  background-image: url('/src/img/Sabonetes/IMAGEM_SABONETE_OLIVA.jpeg');
+  background-image: url('../img/Sabonetes/IMAGEM_SABONETE_OLIVA.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
