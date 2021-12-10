@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
+  outline: none;
 }
 
 html {
@@ -197,7 +198,7 @@ nav ul li {
 
 .caixa p {
   text-align: center;
-  width: 80%;
+  width: 350px;
 }
 
 .caixa img {
@@ -331,6 +332,43 @@ form {
 .btn-confirm {
   width: 255px;
   background-color: #33bb69;
+}
+
+.btn-confirm {
+  width: 150px;
+}
+
+input {
+  border: none;
+  padding: 7px 40px;
+  background-color: #33333342;
+  border-radius: 10px;
+  transition: .5s ease;
+}
+
+input:hover {
+  background-color: #57575742;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.modal-content {
+border: none;
+border-radius: 12px;
+}
+
+.modal-header .btn-close {
+
+  transition: .3s ease;
 }
 
 /*Responsividade*/

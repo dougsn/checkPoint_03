@@ -53,7 +53,79 @@
           <li><a target="_blank" href="./index.html">Home</a></li>
           <li><a href="index.html#produtos" target="_blank">Produtos</a></li>
           <li><a href="#contato">Contato</a></li>
-          <li><a href="#xx">Login</a></li>
+          <li><button
+            type="button"
+            class="btn-nav btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Login
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="formulario">
+                    <form>
+                      <div>
+                        <img
+                          class="logo"
+                          src="./src/img/Sabonetes/Logo_Oficial.png"
+                          alt=""
+                        />
+                      </div>
+                        <div class="input">
+                          <label for="mail">Email:</label>
+                          <input
+                            type="email"
+                            name="mail"
+                            id="mail"
+                            placeholder="Digite seu email"
+                            required
+                          />
+                        </div>
+                      <div class="input" >
+                          <label for="senha">Senha:</label>
+                          <input
+                            type="password"
+                            name="senha"
+                            id="senha"
+                            placeholder="Digite sua senha"
+                            required
+                          />
+                      </div>
+                      <div class="entrar">
+                        <button
+                          type="submit"
+                          class="btn btn-primary btn-confirm"
+                          
+                        >
+                          Entrar
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div></li>
         </ul>
         
       </nav>
@@ -79,6 +151,13 @@
           <img src='/src/img/Sabonetes/IMAGEM_ARGILA_AMARELA_E_BRANCA.jpeg' alt="">
         </div>
       </section>
+      <div class="wpp">
+        <a
+          target="_blank"
+          href="https://api.whatsapp.com/send?phone=5521964505524"
+          ><img src="../src/img/icons/whatsapp.svg" alt=""
+        /></a>
+      </div>
     </main >
     <section class="contato-equipe" id="contato">
       <section class="container-equipe">

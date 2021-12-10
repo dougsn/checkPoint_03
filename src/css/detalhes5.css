@@ -29,6 +29,23 @@ header {
   width: 800px;
 }
 
+.btn-nav{
+  border: none;
+  padding: 5px 15px !important;
+  background-color: #01aaff;
+  border-radius: 7px;
+  transition: .5s ease;
+}
+
+
+.btn-nav:hover {
+  transform: scale(1.05);
+  transition: 0.5s ease;
+  background-color: #01aaff;
+  border: none;
+}
+
+
 .btn {
   border: none;
   padding: 10px 25px !important;
