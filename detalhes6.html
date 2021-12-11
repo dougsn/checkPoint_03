@@ -50,19 +50,103 @@
           /></a>
         </div>
         <ul>
-          <li><a target="_blank" href="./index.html">Home</a></li>
-          <li><a href="index.html#produtos" target="_blank">Produtos</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#produtos">Produtos</a></li>
           <li><a href="#contato">Contato</a></li>
-          <li><button
+          <li>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Login
+            </button>
+
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="formulario">
+                      <form>
+                        <div>
+                          <img
+                            class="logo"
+                            src="./src/img/Sabonetes/Logo_Oficial.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="input">
+                          <label for="mail">Email:</label>
+                          <input
+                            type="email"
+                            name="mail"
+                            id="mail"
+                            placeholder="Digite seu email"
+                            required
+                          />
+                        </div>
+                        <div class="input">
+                          <label for="senha">Senha:</label>
+                          <input
+                            type="password"
+                            name="senha"
+                            id="senha"
+                            placeholder="Digite sua senha"
+                            required
+                          />
+                        </div>
+                        <div class="entrar">
+                          <button
+                            type="submit"
+                            class="btn btn-primary btn-confirm"
+                          >
+                            Entrar
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <nav class="navbar navbar-light fixed-top navbar-responsivo">
+        <div class="container-fluid">
+          <div class="img">
+            <a href="#"
+              ><img
+                class="img-header"
+                src="./src/img/Sabonetes/Logo_Oficial.png"
+                alt=""
+            /></a>
+          </div>
+          <button
             type="button"
-            class="btn-nav btn-primary"
+            class="btn btn-primary"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
           >
             Login
           </button>
 
-          <!-- Modal -->
           <div
             class="modal fade"
             id="exampleModal"
@@ -91,31 +175,30 @@
                           alt=""
                         />
                       </div>
-                        <div class="input">
-                          <label for="mail">Email:</label>
-                          <input
-                            type="email"
-                            name="mail"
-                            id="mail"
-                            placeholder="Digite seu email"
-                            required
-                          />
-                        </div>
-                      <div class="input" >
-                          <label for="senha">Senha:</label>
-                          <input
-                            type="password"
-                            name="senha"
-                            id="senha"
-                            placeholder="Digite sua senha"
-                            required
-                          />
+                      <div class="input">
+                        <label for="mail">Email:</label>
+                        <input
+                          type="email"
+                          name="mail"
+                          id="mail"
+                          placeholder="Digite seu email"
+                          required
+                        />
+                      </div>
+                      <div class="input">
+                        <label for="senha">Senha:</label>
+                        <input
+                          type="password"
+                          name="senha"
+                          id="senha"
+                          placeholder="Digite sua senha"
+                          required
+                        />
                       </div>
                       <div class="entrar">
                         <button
                           type="submit"
                           class="btn btn-primary btn-confirm"
-                          
                         >
                           Entrar
                         </button>
@@ -125,8 +208,39 @@
                 </div>
               </div>
             </div>
-          </div</li>
-        </ul>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li><a href="#">Home</a></li>
+                <li><a href="index.html#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </nav>
       <div class="home">
         <h1>Liz Artes & Aromas</h1>
@@ -136,16 +250,21 @@
     </header>
     <main id="produtos">
       <section class="descricao_produto">
-        
         <div class="descricao">
           <h1>Sabonete Argila & Oliva</h1>
-          <p>Indicado para peles sensíveis e ressecadas, ajuda a melhorar o aspecto do eczema, deixando a pele com um toque aveludado, também atua nas peles oleosas, ajudando a regular a oleosidade natural.
-          <br><br>Óleo Vegetal de Oliva é rico em antioxidantes, vitaminas e minerais, possui alto poder de hidratação, ajuda a manter a elasticidade natural da pele e é indicado para peles sensíveis.</p>
+          <p>
+            Indicado para peles sensíveis e ressecadas, ajuda a melhorar o
+            aspecto do eczema, deixando a pele com um toque aveludado, também
+            atua nas peles oleosas, ajudando a regular a oleosidade natural.
+            <br /><br />Óleo Vegetal de Oliva é rico em antioxidantes, vitaminas
+            e minerais, possui alto poder de hidratação, ajuda a manter a
+            elasticidade natural da pele e é indicado para peles sensíveis.
+          </p>
           <p><b>Aroma Suave</b></p>
           <button class="btn"><a href="#">R$: 30,00</a></button>
         </div>
         <div class="container-img">
-          <img src='./src/img/Sabonetes/IMAGEM_SABONETE_OLIVA.jpeg' alt="">
+          <img src="./src/img/Sabonetes/IMAGEM_SABONETE_OLIVA.jpeg" alt="" />
         </div>
       </section>
       <div class="wpp">
@@ -155,7 +274,7 @@
           ><img src="./src/img/icons/whatsapp.svg" alt=""
         /></a>
       </div>
-    </main >
+    </main>
     <section class="contato-equipe" id="contato">
       <section class="container-equipe">
         <div class="equipe">

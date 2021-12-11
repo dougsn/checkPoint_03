@@ -8,7 +8,7 @@ header {
   height: 450px;
   object-fit: cover;
   border-radius: 12px;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .container-img img:hover {
@@ -17,26 +17,25 @@ header {
 
 .descricao_produto {
   padding: 150px 50px;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    gap: 140px;
-    align-items: center;
-    /* flex-wrap: wrap; */
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 140px;
+  align-items: center;
+  /* flex-wrap: wrap; */
 }
 
 .descricao {
   width: 800px;
 }
 
-.btn-nav{
+.btn-nav {
   border: none;
   padding: 5px 15px !important;
   background-color: #01aaff;
   border-radius: 7px;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
-
 
 .btn-nav:hover {
   transform: scale(1.05);
@@ -45,19 +44,12 @@ header {
   border: none;
 }
 
-
-.btn {
-  border: none;
-  padding: 10px 25px !important;
-}
-
-
 .btn a {
   color: #fff;
 }
 
-@media(max-width: 1100px){
-  .descricao_produto{
+@media (max-width: 1100px) {
+  .descricao_produto {
     flex-wrap: wrap-reverse; /*Inverte a ordem que é 'quebrado' o container*/
   }
 }
