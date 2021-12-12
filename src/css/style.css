@@ -10,6 +10,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 70px; /*Corrige a linkagem interna, para não cobrir o conteúdo*/
 }
 
 a {
@@ -247,6 +248,7 @@ nav ul li {
 .equipe p {
   padding: 20px 0px;
   text-align: center;
+  font-size: 14px;
 }
 
 .equipe:hover {
@@ -377,6 +379,9 @@ input::placeholder {
 /*Responsividade*/
 
 @media (max-width: 400px) {
+  .equipe {
+    padding: 15px 10px !important;
+  }
   .equipe p {
     font-size: 12px;
   }
