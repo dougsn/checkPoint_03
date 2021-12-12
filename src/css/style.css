@@ -241,6 +241,11 @@ nav ul li {
   justify-content: center;
 }
 
+.equipe:hover {
+  transform: scale(1.02);
+  background-color: rgba(204, 204, 204, 1);
+  backdrop-filter: none;
+}
 .equipe h1 {
   font-size: 1.5rem;
 }
@@ -249,11 +254,6 @@ nav ul li {
   padding: 20px 0px;
   text-align: center;
   font-size: 14px;
-}
-
-.equipe:hover {
-  transform: scale(1.02);
-  background-color: rgba(204, 204, 204, 1);
 }
 
 .equipe .links {
@@ -307,7 +307,7 @@ nav ul li {
 }
 
 .modal {
-  padding-top: 200px !important;
+  padding-top: 100px !important;
   backdrop-filter: blur(8px);
   background-color: rgba(0, 0, 0, 0.65);
 }

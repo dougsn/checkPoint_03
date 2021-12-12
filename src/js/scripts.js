@@ -26,7 +26,7 @@ ScrollReveal().reveal('.caixa', {
   interval: 100
 })
 
-ScrollReveal().reveal('.equipe', {
+ScrollReveal().reveal('.container-equipe', {
   delay: 300,
   origin: 'left',
   interval: 100
